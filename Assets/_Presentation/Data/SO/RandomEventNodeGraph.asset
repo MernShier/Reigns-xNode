@@ -1,0 +1,661 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8265874308861404848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: Dog2_Main
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 840, y: 216}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: -8265874308861404848}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNode
+        node: {fileID: -7568672270520870923}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: -8265874308861404848}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNode
+        node: {fileID: 5306947918561217994}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: -8265874308861404848}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: 0}
+  <EventName>k__BackingField: The Royal Dog
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: 2149d6fe6e6147f4b8f20573ef573445, type: 3}
+  <EventText>k__BackingField: Wuf!!
+  <FirstOptionText>k__BackingField: Do you want more territories?
+  <SecondOptionText>k__BackingField: Do you want some sacrifices?
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  firstOptionNextNode: {fileID: -7568672270520870923}
+  secondOptionNextNode: {fileID: 5306947918561217994}
+--- !u!114 &-7568672270520870923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: Dog2
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1112, y: 200}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: -7568672270520870923}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: -7568672270520870923}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: -7568672270520870923}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstOptionNextNode
+        node: {fileID: -8265874308861404848}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -8265874308861404848}
+  <EventName>k__BackingField: The Royal Dog
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: 2149d6fe6e6147f4b8f20573ef573445, type: 3}
+  <EventText>k__BackingField: Wuf!!!
+  <FirstOptionText>k__BackingField: Start a war!
+  <SecondOptionText>k__BackingField: Start a wars!
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: -20
+    <Money>k__BackingField: 0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: -50
+    <Money>k__BackingField: 0
+  firstOptionNextNode: {fileID: 0}
+  secondOptionNextNode: {fileID: 0}
+--- !u!114 &-7395620709209112898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: Dog1
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 552, y: 216}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: -7395620709209112898}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: -7395620709209112898}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: -7395620709209112898}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: 0}
+  <EventName>k__BackingField: The Royal Dog
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: 2149d6fe6e6147f4b8f20573ef573445, type: 3}
+  <EventText>k__BackingField: Wuf!
+  <FirstOptionText>k__BackingField: Make him a priest!
+  <SecondOptionText>k__BackingField: Give him the treasure!
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 11
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -40
+  firstOptionNextNode: {fileID: 0}
+  secondOptionNextNode: {fileID: 0}
+--- !u!114 &-7031169584691788019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: GameStart
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -104}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: -7031169584691788019}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNode
+        node: {fileID: -192679542821900442}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: -7031169584691788019}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNode
+        node: {fileID: 7650211711198368735}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: -7031169584691788019}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -7031169584691788019}
+  <EventName>k__BackingField: ???
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: d8879feb24aa1564f99940d84729dc9f, type: 3}
+  <EventText>k__BackingField: Hi
+  <FirstOptionText>k__BackingField: Who are you?
+  <SecondOptionText>k__BackingField: Who I am?
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  firstOptionNextNode: {fileID: -192679542821900442}
+  secondOptionNextNode: {fileID: 7650211711198368735}
+--- !u!114 &-192679542821900442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: Double Output Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 152, y: -232}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: -192679542821900442}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: previousNode
+        node: {fileID: 7215344872023761088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: -192679542821900442}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: -192679542821900442}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstOptionNextNode
+        node: {fileID: -7031169584691788019}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -192679542821900442}
+  <EventName>k__BackingField: ???
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: d8879feb24aa1564f99940d84729dc9f, type: 3}
+  <EventText>k__BackingField: Are you really wanna know?
+  <FirstOptionText>k__BackingField: Yes
+  <SecondOptionText>k__BackingField: No
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  firstOptionNextNode: {fileID: 7215344872023761088}
+  secondOptionNextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe53019184a58648893f33c40fdf7cb, type: 3}
+  m_Name: RandomEventNodeGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7031169584691788019}
+  - {fileID: -192679542821900442}
+  - {fileID: 7215344872023761088}
+  - {fileID: 7650211711198368735}
+  - {fileID: 8729020359070835969}
+  - {fileID: -7395620709209112898}
+  - {fileID: -8265874308861404848}
+  - {fileID: -7568672270520870923}
+  - {fileID: 5306947918561217994}
+  - {fileID: 2783899631114230676}
+--- !u!114 &2783899631114230676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef89e34e6c34ff5bdefebcc5a9ee098, type: 3}
+  m_Name: King_Event1
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1400, y: 216}
+  ports:
+    keys:
+    - nextNode
+    - previousNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 2783899631114230676}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: 2783899631114230676}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: 0}
+  <EventName>k__BackingField: You
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: d8879feb24aa1564f99940d84729dc9f, type: 3}
+  <EventText>k__BackingField: My current goal...
+  <FirstOptionText>k__BackingField: Prosperity to the kingdom!
+  <SecondOptionText>k__BackingField: Prosperity to the king!
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 20
+    <People>k__BackingField: 20
+    <Army>k__BackingField: 20
+    <Money>k__BackingField: 20
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 24
+  nextNode: {fileID: 0}
+--- !u!114 &5306947918561217994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d40394a95ce4ebfa3fb63aedddb6afc, type: 3}
+  m_Name: Dog2
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1112, y: 616}
+  ports:
+    keys:
+    - firstOptionNextNode
+    - secondOptionNextNode
+    - previousNode
+    values:
+    - _fieldName: firstOptionNextNode
+      _node: {fileID: 5306947918561217994}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: secondOptionNextNode
+      _node: {fileID: 5306947918561217994}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: 5306947918561217994}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: secondOptionNextNode
+        node: {fileID: -8265874308861404848}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -8265874308861404848}
+  <EventName>k__BackingField: The Royal Dog
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: 2149d6fe6e6147f4b8f20573ef573445, type: 3}
+  <EventText>k__BackingField: Wuf!!!
+  <FirstOptionText>k__BackingField: Sacrafice people!
+  <SecondOptionText>k__BackingField: Sacrafice all people!
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: -20
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: -100
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  firstOptionNextNode: {fileID: 0}
+  secondOptionNextNode: {fileID: 0}
+--- !u!114 &7215344872023761088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef89e34e6c34ff5bdefebcc5a9ee098, type: 3}
+  m_Name: Single Output Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 424, y: -232}
+  ports:
+    keys:
+    - nextNode
+    - previousNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 7215344872023761088}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: 7215344872023761088}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: firstOptionNextNode
+        node: {fileID: -192679542821900442}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -192679542821900442}
+  <EventName>k__BackingField: Real King
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: d8879feb24aa1564f99940d84729dc9f, type: 3}
+  <EventText>k__BackingField: The Last King
+  <FirstOptionText>k__BackingField: ...
+  <SecondOptionText>k__BackingField: '!!!'
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  nextNode: {fileID: 0}
+--- !u!114 &7650211711198368735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef89e34e6c34ff5bdefebcc5a9ee098, type: 3}
+  m_Name: Single Output Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 152, y: 216}
+  ports:
+    keys:
+    - nextNode
+    - previousNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 7650211711198368735}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: 7650211711198368735}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: secondOptionNextNode
+        node: {fileID: -7031169584691788019}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: -7031169584691788019}
+  <EventName>k__BackingField: ???
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: d8879feb24aa1564f99940d84729dc9f, type: 3}
+  <EventText>k__BackingField: You are the current King!!
+  <FirstOptionText>k__BackingField: ...
+  <SecondOptionText>k__BackingField: '!!!'
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: -0
+    <People>k__BackingField: -0
+    <Army>k__BackingField: -0
+    <Money>k__BackingField: -0
+  nextNode: {fileID: 0}
+--- !u!114 &8729020359070835969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef89e34e6c34ff5bdefebcc5a9ee098, type: 3}
+  m_Name: Death
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -104, y: 440}
+  ports:
+    keys:
+    - nextNode
+    - previousNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 8729020359070835969}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: previousNode
+      _node: {fileID: 8729020359070835969}
+      _typeQualifiedName: EventSystem.NodeSystem.EventNode, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  previousNode: {fileID: 0}
+  <EventName>k__BackingField: Death
+  <EventSprite>k__BackingField: {fileID: 21300000, guid: 4a4c4b0838ab04c47a8546e7fcb3e739, type: 3}
+  <EventText>k__BackingField: You are dead!
+  <FirstOptionText>k__BackingField: No...
+  <SecondOptionText>k__BackingField: Ok?
+  <FirstOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  <SecondOptionPlayerStatsDataChange>k__BackingField:
+    <Religion>k__BackingField: 0
+    <People>k__BackingField: 0
+    <Army>k__BackingField: 0
+    <Money>k__BackingField: 0
+  nextNode: {fileID: 0}
